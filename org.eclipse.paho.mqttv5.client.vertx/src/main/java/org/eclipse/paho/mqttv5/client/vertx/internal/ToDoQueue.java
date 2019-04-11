@@ -3,14 +3,11 @@ package org.eclipse.paho.mqttv5.client.vertx.internal;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.List;
-import java.util.Set;
 
 import org.eclipse.paho.mqttv5.client.vertx.MqttClientException;
 import org.eclipse.paho.mqttv5.client.vertx.MqttClientPersistence;
 import org.eclipse.paho.mqttv5.client.vertx.MqttToken;
 import org.eclipse.paho.mqttv5.common.MqttException;
-import org.eclipse.paho.mqttv5.common.MqttMessage;
 import org.eclipse.paho.mqttv5.common.MqttPersistenceException;
 import org.eclipse.paho.mqttv5.common.packet.MqttPersistableWireMessage;
 import org.eclipse.paho.mqttv5.common.packet.MqttPublish;

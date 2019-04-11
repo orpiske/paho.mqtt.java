@@ -4,7 +4,6 @@ import java.util.Hashtable;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import org.eclipse.paho.mqttv5.client.vertx.MqttToken;
 import org.eclipse.paho.mqttv5.common.packet.MqttPingReq;
 import org.eclipse.paho.mqttv5.common.packet.MqttPublish;
 

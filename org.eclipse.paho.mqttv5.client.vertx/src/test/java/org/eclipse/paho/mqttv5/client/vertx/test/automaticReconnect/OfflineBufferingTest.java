@@ -20,7 +20,6 @@ import org.eclipse.paho.mqttv5.client.vertx.test.utilities.ConnectionManipulatio
 import org.eclipse.paho.mqttv5.client.vertx.test.utilities.MqttV5Receiver;
 import org.eclipse.paho.mqttv5.client.vertx.test.utilities.TestMemoryPersistence;
 import org.eclipse.paho.mqttv5.client.vertx.test.utilities.Utility;
-import org.eclipse.paho.mqttv5.client.vertx.util.Debug;
 import org.eclipse.paho.mqttv5.common.MqttException;
 import org.eclipse.paho.mqttv5.common.MqttMessage;
 import org.eclipse.paho.mqttv5.common.packet.MqttProperties;

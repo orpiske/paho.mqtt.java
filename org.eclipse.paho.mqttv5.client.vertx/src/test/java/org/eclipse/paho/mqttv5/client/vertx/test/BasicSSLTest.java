@@ -26,7 +26,6 @@ import org.eclipse.paho.mqttv5.client.vertx.test.logging.LoggingUtilities;
 import org.eclipse.paho.mqttv5.client.vertx.test.properties.TestProperties;
 import org.eclipse.paho.mqttv5.client.vertx.test.utilities.MqttV5Receiver;
 import org.eclipse.paho.mqttv5.client.vertx.test.utilities.Utility;
-import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;

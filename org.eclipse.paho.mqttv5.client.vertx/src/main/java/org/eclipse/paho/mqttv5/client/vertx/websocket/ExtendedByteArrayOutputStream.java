@@ -2,7 +2,6 @@ package org.eclipse.paho.mqttv5.client.vertx.websocket;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.OutputStream;
 import java.nio.ByteBuffer;
 
 import org.eclipse.paho.mqttv5.client.vertx.websocket.WebSocketFrame;

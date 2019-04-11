@@ -8,7 +8,6 @@ import org.eclipse.paho.mqttv5.client.vertx.IMqttDeliveryToken;
 import org.eclipse.paho.mqttv5.client.vertx.IMqttToken;
 import org.eclipse.paho.mqttv5.client.vertx.MqttAsyncClient;
 import org.eclipse.paho.mqttv5.client.vertx.MqttConnectionOptions;
-import org.eclipse.paho.mqttv5.client.vertx.MqttToken;
 import org.eclipse.paho.mqttv5.client.vertx.persist.MemoryPersistence;
 import org.eclipse.paho.mqttv5.client.vertx.test.automaticReconnect.TopicAliasReconnectTest;
 import org.eclipse.paho.mqttv5.client.vertx.test.logging.LoggingUtilities;

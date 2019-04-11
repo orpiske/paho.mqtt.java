@@ -5,8 +5,6 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.ByteBuffer;
 
-import org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule;
-
 class ExtendedByteArrayOutputStream extends ByteArrayOutputStream {
 
 	final WebSocketNetworkModule webSocketNetworkModule;

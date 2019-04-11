@@ -19,7 +19,6 @@
 package org.eclipse.paho.mqttv5.client.vertx;
 
 import java.util.Properties;
-import java.util.concurrent.ScheduledExecutorService;
 
 import javax.net.SocketFactory;
 

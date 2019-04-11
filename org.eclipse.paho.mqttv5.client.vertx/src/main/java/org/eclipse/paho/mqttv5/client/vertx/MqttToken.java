@@ -22,13 +22,8 @@ import java.util.concurrent.TimeUnit;
 import org.eclipse.paho.mqttv5.common.MqttException;
 import org.eclipse.paho.mqttv5.common.packet.MqttConnAck;
 import org.eclipse.paho.mqttv5.common.packet.MqttProperties;
-import org.eclipse.paho.mqttv5.common.packet.MqttPublish;
 import org.eclipse.paho.mqttv5.common.packet.MqttSubAck;
-import org.eclipse.paho.mqttv5.common.packet.MqttSubscribe;
 import org.eclipse.paho.mqttv5.common.packet.MqttWireMessage;
-
-import io.vertx.core.*;
-import io.vertx.core.net.*;
 
 /**
  * Provides a mechanism for tracking the completion of an asynchronous action.

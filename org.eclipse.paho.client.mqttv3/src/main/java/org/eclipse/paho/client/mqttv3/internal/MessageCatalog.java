@@ -21,7 +21,7 @@ package org.eclipse.paho.client.mqttv3.internal;
 public abstract class MessageCatalog {
 	private static MessageCatalog INSTANCE = null;
 
-	public static final String getMessage(int id) {
+	public static String getMessage(int id) {
 		if (INSTANCE == null) {
 			if (ExceptionHelper.isClassAvailable("java.util.ResourceBundle")) {
 				try {

@@ -85,7 +85,7 @@ public class SimpleBase64Encoder {
 
 	/* the core conding routine. Translates an input integer into
 	 * a string of the given length.*/
-	private final static String to64(long input, int size) {
+	private static String to64(long input, int size) {
 		final StringBuffer result = new StringBuffer(size);
 		while (size > 0) {
 			size--;
@@ -98,7 +98,7 @@ public class SimpleBase64Encoder {
 	/*
 	 * The reverse operation of to64
 	 */
-	private final static long from64(byte[] encoded, int idx, int size) {
+	private static long from64(byte[] encoded, int idx, int size) {
 		long res=0;
 		int f=0;
 		while(size>0) {

@@ -342,7 +342,7 @@ public class SubPanel implements ActionListener {
 			}
 
 			if (byteValue < 16) {
-				hexText.append("0" + Integer.toHexString(byteValue));
+				hexText.append("0").append(Integer.toHexString(byteValue));
 			} else {
 				hexText.append(Integer.toHexString(byteValue));
 			}

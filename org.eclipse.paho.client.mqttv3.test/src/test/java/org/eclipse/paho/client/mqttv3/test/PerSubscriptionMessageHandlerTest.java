@@ -45,10 +45,7 @@ import org.junit.experimental.categories.Category;
 
 @Category({OnlineTest.class, MQTTV3Test.class})
 public class PerSubscriptionMessageHandlerTest {
-	
-	  static final Class<?> cclass = PerSubscriptionMessageHandlerTest.class;
-	  static final String className = cclass.getName();
-	  static final Logger log = Logger.getLogger(className);
+	  static final Logger log = Logger.getLogger(PerSubscriptionMessageHandlerTest.class.getName());
 
 	  private static URI serverURI;
 	  private static MqttClientFactoryPaho clientFactory;
@@ -63,7 +60,7 @@ public class PerSubscriptionMessageHandlerTest {
 
 	    try {
 	      String methodName = Utility.getMethodName();
-	      LoggingUtilities.banner(log, cclass, methodName);
+	      LoggingUtilities.banner(log, PerSubscriptionMessageHandlerTest.class, methodName);
 
 	      serverURI = TestProperties.getServerURI();
 	      clientFactory = new MqttClientFactoryPaho();
@@ -83,7 +80,7 @@ public class PerSubscriptionMessageHandlerTest {
 	  @AfterClass
 	  public static void tearDownAfterClass() throws Exception {
 	    String methodName = Utility.getMethodName();
-	    LoggingUtilities.banner(log, cclass, methodName);
+	    LoggingUtilities.banner(log, PerSubscriptionMessageHandlerTest.class, methodName);
 
 	    try {
 	      if (clientFactory != null) {
@@ -144,8 +141,8 @@ public class PerSubscriptionMessageHandlerTest {
 	  @Test
 	  public void testSyncSubs1() throws Exception {
 	    final String methodName = Utility.getMethodName();
-	    LoggingUtilities.banner(log, cclass, methodName);
-	    log.entering(className, methodName);        
+	    LoggingUtilities.banner(log, PerSubscriptionMessageHandlerTest.class, methodName);
+	    log.entering(PerSubscriptionMessageHandlerTest.class.getName(), methodName);
     
 	    listener mylistener = new listener();
 	    IMqttClient mqttClient = clientFactory.createMqttClient(serverURI, methodName);
@@ -174,8 +171,8 @@ public class PerSubscriptionMessageHandlerTest {
 	  @Test
 	  public void testAsyncSubs1() throws Exception {
 	    final String methodName = Utility.getMethodName();
-	    LoggingUtilities.banner(log, cclass, methodName);
-	    log.entering(className, methodName);
+	    LoggingUtilities.banner(log, PerSubscriptionMessageHandlerTest.class, methodName);
+	    log.entering(PerSubscriptionMessageHandlerTest.class.getName(), methodName);
 	   
 	    listener mylistener = new listener();
 	    IMqttAsyncClient mqttClient = clientFactory.createMqttAsyncClient(serverURI, methodName);
@@ -212,8 +209,8 @@ public class PerSubscriptionMessageHandlerTest {
 	  @Test
 	  public void testSyncCleanSessionFalse() throws Exception {
 		    final String methodName = Utility.getMethodName();
-		    LoggingUtilities.banner(log, cclass, methodName);
-		    log.entering(className, methodName);        
+		    LoggingUtilities.banner(log, PerSubscriptionMessageHandlerTest.class, methodName);
+		    log.entering(PerSubscriptionMessageHandlerTest.class.getName(), methodName);
 	    
 		    listener mylistener = new listener();
 		    IMqttClient mqttClient = clientFactory.createMqttClient(serverURI, methodName);
@@ -264,8 +261,8 @@ public class PerSubscriptionMessageHandlerTest {
 	  @Test
 	  public void testAsyncCleanSessionFalse() throws Exception {
 		    final String methodName = Utility.getMethodName();
-		    LoggingUtilities.banner(log, cclass, methodName);
-		    log.entering(className, methodName);
+		    LoggingUtilities.banner(log, PerSubscriptionMessageHandlerTest.class, methodName);
+		    log.entering(PerSubscriptionMessageHandlerTest.class.getName(), methodName);
 		   
 		    listener mylistener = new listener();
 		    IMqttAsyncClient mqttClient = clientFactory.createMqttAsyncClient(serverURI, methodName);
